@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: toolbox-front
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+        - backend
+    networks:
+      - toolbox
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: toolbox-backend
+    ports:
+      - "5000:5000"    
+    networks:
+      - toolbox
+networks:
+  toolbox:
+    driver: bridge

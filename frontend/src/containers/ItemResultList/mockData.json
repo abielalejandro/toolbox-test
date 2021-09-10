@@ -1,0 +1,4 @@
+[
+    { "isPalindrome": true, "origin": "ana", "text": "ana" },
+    { "isPalindrome": false, "origin": "test", "text": "tset" }
+]

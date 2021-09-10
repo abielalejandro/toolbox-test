@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemResult /> Should render and match the snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`<ItemResultList /> Should render and match the snapshot 1`] = `ShallowWrapper {}`;
